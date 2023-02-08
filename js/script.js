@@ -1,7 +1,5 @@
 let letters_main = document.querySelector('.letters');
-let word_main = document.querySelector('.word_main');
 let word_displayed = document.querySelector('.word');
-let lives = document.querySelector('.lives');
 let lives_result = document.querySelector('.lives_result');
 let clue = document.querySelector('.clue');
 let stick_man = document.querySelector('.stick_man');
@@ -32,11 +30,9 @@ let arrHint = [
 
 let category = [
     "The Chosen Category Is Premier League Football Teams", 
-"The Chosen Category Is Films", 
-"The Chosen Category Is Cities"];
+    "The Chosen Category Is Films", 
+    "The Chosen Category Is Cities"];
 
-// let arrCategor = [['word']];
-// let arrHint = [['hint']];
 let indexArr, indexWord, indexCategor;
 
 function createLetter(letters_main, arrLetter){
@@ -56,10 +52,10 @@ function displayWord(word){
     word_displayed.innerHTML = '';
     for(let i = 0; i < word.length; i++){
         if(word[i] == '-'){
-            word_displayed.append('- ')
+            word_displayed.append('- ');
         }
         else{
-            word_displayed.append('_ ')
+            word_displayed.append('_ ');
         }
     } 
 }
@@ -80,15 +76,15 @@ draw = function($pathFromx, $pathFromy, $pathTox, $pathToy) {
     context.stroke(); 
 }
 
-frame1 = function() {draw (0, 150, 150, 150);}
-frame2 = function() {draw (10, 0, 10, 600);}
-frame3 = function() {draw (0, 5, 70, 5);}
-frame4 = function() {draw (60, 5, 60, 15);}
-torso = function() {draw (60, 36, 60, 70);}
-rightArm = function() {draw (60, 46, 100, 50);}
-leftArm = function() {draw (60, 46, 20, 50);}
-rightLeg = function() {draw (60, 70, 100, 100);}
-leftLeg = function() {draw (60, 70, 20, 100);}
+frame1 = function() {draw (0, 150, 150, 150)}
+frame2 = function() {draw (10, 0, 10, 600)}
+frame3 = function() {draw (0, 5, 70, 5)}
+frame4 = function() {draw (60, 5, 60, 15)}
+torso = function() {draw (60, 36, 60, 70)}
+rightArm = function() {draw (60, 46, 100, 50)}
+leftArm = function() {draw (60, 46, 20, 50)}
+rightLeg = function() {draw (60, 70, 100, 100)}
+leftLeg = function() {draw (60, 70, 20, 100)}
 
 drawArray = [rightLeg, leftLeg, rightArm, leftArm,  torso,  head, frame4, frame3, frame2, frame1]; 
 
@@ -101,7 +97,8 @@ function createHtmlGame(){
     let stickCount = 9;
     let nextStick;
 
-    letters_main.innerHTML = ''
+    letters_main.innerHTML = '';
+
     for(let i = 0; i < alphabet.length; i++){
         createLetter(letters_main, alphabet[i])
     }
@@ -131,6 +128,7 @@ function createHtmlGame(){
                 }
             } 
         }
+
         if(!event.target.classList.contains('selected')){
             if(lives_result.innerHTML == 'You Win!'){
                 event.target.classList.add('selected');
@@ -162,8 +160,6 @@ function createHtmlGame(){
             stickCount = 9;
         }
     }
-
-    
 }
 //====================================================================================================================================================================
 
@@ -182,4 +178,4 @@ document.addEventListener("DOMContentLoaded", createHtmlGame())
 // canvas                                       +
 // добавить новые слова                         +
 
-// choosen category                             
+// choosen category                             +
