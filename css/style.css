@@ -1,0 +1,104 @@
+@import 'null.css';
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+body {
+  background-color: #77e600;
+  color: #ffffff;
+  font-family: "Arvo", serif;
+}
+body .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+}
+body .main .head {
+  margin-top: 25px;
+}
+body .main .head h1 {
+  margin-bottom: 5px;
+}
+body .main .head h2 {
+  margin-bottom: 10px;
+}
+body .main .letters {
+  margin-top: 20px;
+  height: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+body .main .letters .letter {
+  width: 50px;
+  height: 50px;
+  padding: 9px;
+  margin: 0px 5px 5px 0px;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #77e600;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+body .main .letters .letter:hover {
+  background-color: white;
+  color: #77e600;
+}
+body .main .letters .selected {
+  background-color: #e4e4e4;
+  color: #77e600;
+  border: 2px solid #e4e4e4;
+  cursor: auto;
+}
+body .main .letters .selected:hover {
+  background-color: #e4e4e4;
+  color: #77e600;
+}
+body .main .word_main {
+  margin-top: 40px;
+}
+body .main .word_main h2 {
+  margin-bottom: 10px;
+}
+body .main .lives {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+body .main .lives .lives_result {
+  font-size: 20px;
+}
+body .main .lives .lives_result {
+  font-size: 20px;
+}
+body .main .lives .clue {
+  font-size: 30px;
+}
+body .main .stick_man {
+  width: 450px;
+  height: 230px;
+  border: 2px dashed white;
+  margin-top: 20px;
+  padding: 15px;
+}
+body .main .buttons {
+  margin-top: 15px;
+}
+body .main .buttons .btn {
+  width: 170px;
+  height: 45px;
+  background-color: #77e600;
+  border: 1px solid white;
+  color: white;
+  margin-right: 7px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+body .main .buttons .btn:hover {
+  background-color: white;
+  color: #77e600;
+}
