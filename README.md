@@ -1,2 +1,4 @@
 Hang_Man 
-- a simle game Hangman. Page - https://vzaporozky.github.io/Hang_man/
+- a simle game Hangman. 
+- Created with Html, Css, Vanilla JS
+- Page - https://vzaporozky.github.io/Hang_man/
