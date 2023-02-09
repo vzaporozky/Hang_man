@@ -88,7 +88,6 @@ leftLeg = function() {draw (60, 70, 20, 100)}
 
 drawArray = [rightLeg, leftLeg, rightArm, leftArm,  torso,  head, frame4, frame3, frame2, frame1]; 
 
-//====================================================================================================================================================================
 function createHtmlGame(){
     lives_result.innerHTML = 'You have <span class="count">10</span> lives'
     let counter = document.querySelector('.count');
